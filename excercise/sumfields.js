@@ -9,7 +9,7 @@ $("input[name = 'c_chin2'], input[name = 'c_chin1']").keyup(function(){
 
     
     $("input[name = 'c_chin2'], input[name = 'c_chin1']").each(function(){
-        sum += Number($(this).val());
+        sum += $(this).val();
     });
 
     $("input[name = 'c_chintotal123']").val(sum);
