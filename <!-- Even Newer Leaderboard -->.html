@@ -1,0 +1,385 @@
+<!-- Even Newer Leaderboard -->
+<!-- <div class="hero-unit" > -->
+<p style="text-align: center;"><small>
+{{ employeePortal.employee_dashboard.ed_script_2_2 }}
+</small></p>
+  <div id="main-board3">
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="widget-box transparent" style="margin-bottom: 0px;">
+          <div class="widget-header widget-header-flat" style="border:none;">
+            <h4 class="black">
+              <i class="halflings-icon bookmark"></i>
+              <b>{!#CURR_CUSTM.name#text} {{ employeePortal.employee_dashboard.ed_script_2_3 }}</b>
+            </h4>
+          </div>
+        </div>
+  
+        <div class="infobox-container" style="margin-left: 37%">
+          <!-- <div class="infobox infobox-green">
+            <div class="infobox-icon">
+              <i class="icon-globe"></i>
+            </div>
+  
+            <div class="infobox-data">
+              <span class="infobox-data-number" id='total-dol-val'>#EVAL[#CALC_SUM.mg_donation( mg_donation_amount | (status == "Confirmed" || status == "Confirmed & Matched") && mg_volunteer_type == false)]</span>
+              <div class="infobox-content">{{ employeePortal.employee_dashboard.ed_script_2_4 }}</div>
+            </div>
+            <!<div class="stat stat-success">8%</div>-->
+          <!-- </div>  -->
+
+
+          <div class="infobox infobox-orange" style="display: block">
+            <div class="infobox-icon">
+              <i class="icon-gift"></i>
+            </div>
+          
+            <div class="infobox-data">
+              <span class="infobox-data-number" id="total-hrs-donated">#EVAL[#CALC_SUM.mg_donation( mg_donation_amount | (status == "Confirmed" || status == "Confirmed & Matched") && mg_volunteer_type == true)]</span>
+              <div class="infobox-content">{{ employeePortal.employee_dashboard.ed_script_2_5 }}</div>
+            </div>
+          </div>
+
+          <!-- <div class="infobox infobox-red">
+            <div class="infobox-icon">
+              <i class="icon-certificate"></i>
+            </div>
+  
+            <div class="infobox-data">
+              <span id="avg-don-val" class="infobox-data-number"></span>
+              <div class="infobox-content">{{ employeePortal.employee_dashboard.ed_script_2_5b }}</div>
+            </div> -->
+            <!--<div class="stat stat-important">4%</div>-->
+          <!-- </div> -->
+
+          <div class="infobox infobox-grey" style="display: block">
+            <div class="infobox-icon">
+              <i class="icon-gift"></i>
+            </div>
+          
+            <div class="infobox-data">
+              <span class="infobox-data-number" id="avg-hrs-donated"></span>
+              <div class="infobox-content">{{ employeePortal.employee_dashboard.ed_script_2_6 }}</div>
+            </div>
+          </div>
+
+          <!-- <div class="infobox infobox-blue">
+            <div class="infobox-progress">
+              <div id="percent-doll-matched" class="easy-pie-chart percentage easyPieChart" data-size="45" style="width: 39px; height: 39px; line-height: 39px;">
+                <canvas width="39" height="39"></canvas>
+              </div>
+            </div>
+
+            <div class="infobox-data">
+              <div class="percent infobox-data-number"></div>
+              <div class="infobox-content">
+                {{employeePortal.employee_dashboard.ed_script_2_7 }} {{employeePortal.employee_dashboard.ed_script_2_8 }}
+              </div>
+            </div>
+          </div> -->
+
+          <div class="infobox infobox-pink" style="display: block">
+            <div class="infobox-progress">
+              <div id="percent-hr-matched" class="easy-pie-chart percentage easyPieChart" data-size="45" style="width: 39px; height: 39px; line-height: 39px;">
+                <canvas width="39" height="39"></canvas>
+              </div>
+            </div>
+          
+            <div class="infobox-data">
+              <div class="percent infobox-data-number"></div>
+              <div class="infobox-content">
+                {{employeePortal.employee_dashboard.ed_script_2_9 }} {{employeePortal.employee_dashboard.ed_script_2_8 }}
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="infobox infobox-orange2">
+            <div class="infobox-progress">
+              <div id="percent-don-matched" class="easy-pie-chart percentage easyPieChart" data-size="45" style="width: 39px; height: 39px; line-height: 39px;">
+                <canvas width="39" height="39"></canvas>
+              </div>
+            </div>
+          
+            <div class="infobox-data">
+              <span class="percent infobox-data-number"></span>
+              <div class="infobox-content">
+                {{employeePortal.employee_dashboard.ed_script_2_10 }} {{ employeePortal.employee_dashboard.ed_script_2_8 }}
+              </div>
+            </div>
+          </div> -->
+
+          <div class="infobox infobox-purple" style="display: block">
+            <div class="infobox-icon">
+              <i class="icon-filter"></i>
+            </div>
+  
+            <div class="infobox-data">
+              <span class="infobox-data-number" id="total-part"></span>
+              <div class="infobox-content">
+                 {{ employeePortal.employee_dashboard.ed_script_2_11 }}
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="infobox infobox-green2">
+            <div class="infobox-icon">
+              <i class="icon-gift"></i>
+            </div>
+          
+            <div class="infobox-data">
+              <span class="infobox-data-number" id='total-don-val'>#EVAL[#CALC_SUM.mg_donation( mg_donation_value__for_metrics_ | (status == "Confirmed" || status == "Confirmed & Matched"))]</span>
+              <div class="infobox-content">{{ employeePortal.employee_dashboard.ed_script_2_12 }}</div>
+            </div>
+          </div> -->
+
+          <div class="infobox infobox-blue3" style="display: block">
+            <div class="infobox-icon">
+              <i class="icon-gift"></i>
+            </div>
+  
+            <div class="infobox-data">
+              <span class="infobox-data-number" id="total-match-gifts"></span>
+              <div class="infobox-content">{{ employeePortal.employee_dashboard.ed_script_2_13 }}</div>
+            </div>
+          </div>
+          
+  
+        </div>
+      </div> 
+      <!-- <div class='span6'>
+        <div class="widget-box transparent" style="margin-bottom: 0px;">
+          <div class="widget-header widget-header-flat" style="border-bottom: 1px solid #CCC;">
+            <h4 class="black">
+              <i class="fa fa-heart"></i>
+              <b>{{ employeePortal.employee_dashboard.ed_script_2_14 }}</b>
+            </h4>
+          </div>
+        </div> -->
+
+          <!-- <div class="widget-body" id="gdgpie">
+            <div class="widget-main" style='overflow:auto;'>
+              <div id="piechart-placeholder" style="width: 90%; min-height: 150px; padding: 0px; position: relative;">
+                <canvas class="flot-base" width="702" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 351px; height: 150px;"></canvas>
+                <canvas class="flot-overlay" width="702" height="300" style="direction: ltr; position: absolute; left: 0px; top: 0px; width: 351px; height: 150px;"></canvas>
+                <div class="legend">
+                  <div style="position: absolute; width: 95px; height: 110px; top: 15px; right: -30px; background-color: rgb(255, 255, 255); opacity: 0.85;"></div>
+                  <table style="position:absolute;top:15px;right:-30px;font-size:smaller;color:#545454"> -->
+                  <!-- <table> -->
+                    <!-- <tbody>
+                     
+                    </tbody>
+                  </table>
+                </div>
+              </div> -->
+            <!-- </div> --><!-- /widget-main -->
+          <!-- </div> --><!-- /widget-body -->
+       <!--  </div>
+      </div> -->
+    <!-- </div> --> <!-- end row  -->
+    <div class="row-fluid">
+      <!-- <div class="span6" >
+        <div class="widget-box transparent">
+          <div class="widget-header widget-header-flat">
+            <h4 class="black">
+              <i class="icon-star"></i>
+              <b>{{ employeePortal.employee_dashboard.ed_script_2_15 }}</b>
+            </h4>
+          </div> -->
+  
+          <!-- <div class="widget-body">
+            <div class="widget-main no-padding">
+              <table class="table table-bordered table-striped" style='background-color:white;' id='employee-tbl'>
+                <thead class="thin-border-bottom">
+                  <tr>
+                    <th>
+                      <i class="icon-caret-right blue"></i>
+                    </th>
+  
+                    <th>
+                     {{ employeePortal.employee_dashboard.ed_script_2_16 }}
+                    </th>
+  
+                    <th class="hidden-480">
+                     {{ employeePortal.employee_dashboard.ed_script_2_17 }}
+                    </th>
+                  </tr>
+                </thead> -->
+  
+                <!-- <tbody></tbody>
+              </table> -->
+            <!-- </div> --><!-- /widget-main -->
+          <!-- </div> --><!-- /widget-body -->
+        <!-- </div>
+      </div> -->
+  
+      <div class="span6">
+        <!-- <div class="widget-box transparent">
+          <div class="widget-header widget-header-flat">
+            <h4 class="black" style="border:none;">
+              <i class="halflings-icon bookmark"></i>
+              <b>{{ employeePortal.employee_dashboard.ed_script_2_18 }}</b>
+            </h4>
+          </div> -->
+  
+          <!-- <div class="widget-body">
+            <div class="widget-main no-padding">
+              <table class="table table-bordered table-striped" style='background-color:white;' id="prog-tbl">
+                <thead class="thin-border-bottom">
+                  <tr>
+                    <th>
+                      <i class="icon-caret-right blue"></i>
+                    </th>
+  
+                    <th>
+                      {{ employeePortal.employee_dashboard.ed_script_2_19 }}
+                    </th>
+  
+                    <th class="hidden-480">
+                      {{ employeePortal.employee_dashboard.ed_script_2_20 }}
+                    </th>
+                  </tr>
+                </thead>
+  
+                <tbody>
+                  <tr>
+                    <td class='rank'>
+                      <span class="label label-success arrowed-in arrowed-in-right">{{ employeePortal.employee_dashboard.ed_script_2_21 }}</span>
+                    </td>
+  
+                    <td>{{ employeePortal.employee_dashboard.ed_script_2_22 }}</td>
+  
+                    <td>
+                      <b class="green">{{ employeePortal.employee_dashboard.ed_script_2_26 }}</b>
+                    </td>
+                  </tr>
+  
+                  <tr>
+                    <td class='rank'><span class="label label-warning">{{ employeePortal.employee_dashboard.ed_script_2_23 }}</span></td>
+  
+                    <td>{{ employeePortal.employee_dashboard.ed_script_2_24 }}</td>
+  
+                    <td>
+                      <b class="green">{{ employeePortal.employee_dashboard.ed_script_2_25 }}</b>
+                    </td>
+                  </tr>
+                </tbody>
+              </table> -->
+            <!-- </div> --><!-- /widget-main -->
+          <!-- </div> --><!-- /widget-body -->
+        <!-- </div>
+          
+      </div>
+   -->
+    <!-- </div> --><!-- end row -->
+  <!-- </div> --> <!-- main board 3 -->
+<!-- </div> -->
+<span class='helper' id='n-donations'>#EVAL[#CALC_COUNT.mg_donation( mg_donation_value__for_metrics_ | (status == "Confirmed" || status == "Confirmed & Matched") &&  mg_volunteer_type == false)]</span>
+<span class='helper' id='n-confirmed-donations'>#EVAL[#CALC_COUNT.mg_donation( mg_donation_value__for_metrics_ | status == "Confirmed")]</span>
+<span class='helper' id='n-confirmed-and-matched-donations'>#EVAL[#CALC_COUNT.mg_donation( mg_donation_value__for_metrics_ | status == "Confirmed & Matched")]</span>
+<span class='helper' id='n-hrs-donations'>#EVAL[#CALC_COUNT.mg_donation( mg_donation_amount | (status == "Confirmed" || status == "Confirmed & Matched") && mg_volunteer_type == true)]</span>
+<div class="space-6"></div>
+
+<style type="text/css">
+  #gdgpie{
+    height: 200px; 
+    border-top: 1;
+  }
+  .label-success, .badge-success {
+    background-color: #82af6f!important;
+  }
+  #main-board3 .table td, #main-board3 .table th {
+    line-height: 18px;
+  }
+  #main-board3 {
+    padding-top: 5px;
+    /*background-color: #749db4;*/
+    padding-bottom: 14px;
+    padding-left: 15px;
+    padding-right: 10px;
+  }
+  .rank {
+    font-weight: 999;
+  }
+  #main-board3 .bookmark {
+    margin-top: 11px;
+  }
+  .widget-box {
+    text-align: center;
+  }
+</style>
+
+
+
+            <!-- <li>
+              <a href="{!#PORTAL.5247346.5249381#url}&id={!#CURR_VISIT.id}">
+                <i class="icon-gift"></i>
+                <span class="menu-text" ng-cloak> {{ employeePortal.eph.header_script_5_1 }} </span>
+              </a>
+            </li> -->
+            employee portal
+            employee dashboard
+            text
+
+
+
+wey_employee_das_3.1
+
+
+
+
+
+
+        <p>Hi {{employeePortal.employee_dashboard.wey_employee_das_3.1}} {!firstName}!</p>
+        <h1>{{employeePortal.employee_dashboard.wey_employee_das_3.2}}</h1>
+        <h3>{{employeePortal.employee_dashboard.wey_employee_das_3.3}}</h3>
+        <h2> {{employeePortal.employee_dashboard.wey_employee_das_3.4}}{{employeePortal.employee_dashboard.wey_employee_das_3.5}}{{employeePortal.employee_dashboard.wey_employee_das_3.6}} </h2>
+        <h4> {{employeePortal.employee`1_dashboard.wey_employee_das_3.7}}</h4>
+        <p>{{employeePortal.employee_dashboard.wey_employee_das_3.8}} </p>
+        <p>{{employeePortal.employee_dashboard.wey_employee_das_3.9}}</p>
+        <p>{{employeePortal.employee_dashboard.wey_employee_das_3.11}}</p>
+        
+
+
+       <h1 ng-cloak>{{employeePortal.main_page.mp_script_1_1}}</h1>
+<h1>{{employeePortal.main_page.mp_script_1_2}}</h1> <br>
+
+
+
+
+
+        <p>Hi {{ 'employeePortal.employee_dashboard.wey_employee_das_3.1' }} {!firstName}!</p>
+        <h1> Waves </h1>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.2' }}
+        <h3> Weyerhaeuser Active Volunteer Employees </h3>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.3' }}
+        <h2> WE PUT THE YOU IN COMM(tockenY)OU(token)NITY (token) </h2>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.4' }}
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.5' }}
+         {{ 'employeePortal.employee_dashboard.wey_employee_das_3.6' }}
+
+        <h4> Find your passion, connect with peers, share & build your skills… </h4>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.7' }}
+        <p> We know our volunteer efforts are building stronger, healthier </p>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.8' }}
+        <p> communities & our programs foster happy, healthy employees. </p>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.9' }}
+        <p>To report your hours and apply under WAVES, please click "Give" menu option on the left-hand sidebar.</p>
+        {{ 'employeePortal.employee_dashboard.wey_employee_das_3.11' }}
+
+
+
+<!-- <h1>{{employeePortal.employee_dashboard.ed_script_1_1}}, {!firstName}!</h1>
+        <p>{{employeePortal.employee_dashboard.ed_script_1_2}}</p>
+        <hr> -->
+
+
+
+
+
+
+
+
+        <h1>{{employeePortal.employee_dashboard.ed_script_1_1}}, {!firstName}!</h1>
+        <p>{{employeePortal.employee_dashboard.ed_script_1_2}}</p>
+        <hr>
+

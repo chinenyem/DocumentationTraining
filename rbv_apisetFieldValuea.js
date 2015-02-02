@@ -20,4 +20,32 @@ var y = rbv_api.setFieldValue("request02", {!id}, "c_diversity_ethnicity", "Hisp
 
 
 
- 
+ var big:
+
+ if (x > 10){
+  big = true;
+
+ } else {
+  big = false;
+ }
+
+ var big = (x > 10) ? true : false ;
+
+ var Jesus:
+
+ if ( grace >= "forever"){
+
+    Jesus = yes
+ }
+  else {
+    Jesus = no
+  }
+
+
+
+ {{employeePortal.main_page.mp_script_1_1}}
+
+
+ {{employeePortal.main_page.mp_script_1_2}}
+
+ Main Page [Employee Portal]

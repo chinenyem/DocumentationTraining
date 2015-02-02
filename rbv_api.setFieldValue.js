@@ -11,13 +11,3 @@ var y = rbv_api.setFieldValue("request02", {!id}, "c_diversity_ethnicity", "Hisp
  // return the updated value of the field
 
  return rbv_api.getFieldValue("request02", {!id}, "c_diversity_ethnicity");
-
-
-
-
- https://github.com/chinenyem/DocumentationTraining/blob/master/rbv_apisetFieldValue.js
-
-
-
-
- 
